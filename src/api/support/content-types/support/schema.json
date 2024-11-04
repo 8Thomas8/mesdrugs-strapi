@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "supports",
+  "info": {
+    "singularName": "support",
+    "pluralName": "supports",
+    "displayName": "Support",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "message": {
+      "type": "text",
+      "required": true,
+      "maxLength": 1000
+    },
+    "process_status": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "in progress",
+        "done",
+        "cancel"
+      ],
+      "default": "new",
+      "required": true
+    }
+  }
+}
