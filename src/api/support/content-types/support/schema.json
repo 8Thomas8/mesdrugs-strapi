@@ -27,6 +27,24 @@
       ],
       "default": "new",
       "required": true
+    },
+    "created_by_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "created_datetime": {
+      "type": "datetime",
+      "required": false
+    },
+    "updated_datetime": {
+      "type": "datetime",
+      "required": false
+    },
+    "updated_by_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }
